@@ -1,0 +1,264 @@
+$date
+	Fri Apr  5 11:35:54 2013
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 32 ! buffer_size [31:0] $end
+$var wire 1 " cmd_last $end
+$var wire 28 # next_addr [27:0] $end
+$var wire 32 $ prdata [31:0] $end
+$var wire 1 % pready $end
+$var wire 1 & pslverr $end
+$var wire 32 ' rd_start_addr [31:0] $end
+$var wire 1 ( set_int $end
+$var wire 1 ) wr_ch_start $end
+$var wire 32 * wr_start_addr [31:0] $end
+$var reg 16 + buffer_count [15:0] $end
+$var reg 1 , clk $end
+$var reg 16 - int_count [15:0] $end
+$var reg 16 . paddr [15:0] $end
+$var reg 1 / pclken $end
+$var reg 1 0 penable $end
+$var reg 1 1 psel $end
+$var reg 32 2 pwdata [31:0] $end
+$var reg 1 3 pwrite $end
+$var reg 1 4 reset $end
+$scope module interface_test $end
+$var wire 16 5 buffer_count [15:0] $end
+$var wire 1 6 clk $end
+$var wire 1 7 gpread $end
+$var wire 1 8 gpwrite $end
+$var wire 16 9 int_count [15:0] $end
+$var wire 16 : paddr [15:0] $end
+$var wire 1 ; pclken $end
+$var wire 1 < penable $end
+$var wire 1 = psel $end
+$var wire 32 > pwdata [31:0] $end
+$var wire 1 ? pwrite $end
+$var wire 1 @ reset $end
+$var wire 1 ) wr_ch_start $end
+$var wire 1 A wr_reg0 $end
+$var wire 1 B wr_reg1 $end
+$var wire 1 C wr_reg2 $end
+$var wire 1 D wr_reg3 $end
+$var wire 1 E wr_reg4 $end
+$var reg 32 F buffer_size [31:0] $end
+$var reg 1 G cmd_last $end
+$var reg 28 H next_addr [27:0] $end
+$var reg 32 I prdata [31:0] $end
+$var reg 32 J prdata_pre [31:0] $end
+$var reg 1 K pready $end
+$var reg 1 L pslverr $end
+$var reg 1 M pslverr_pre $end
+$var reg 32 N rd_reg0 [31:0] $end
+$var reg 32 O rd_reg1 [31:0] $end
+$var reg 32 P rd_reg2 [31:0] $end
+$var reg 32 Q rd_reg3 [31:0] $end
+$var reg 32 R rd_reg5 [31:0] $end
+$var reg 32 S rd_start_addr [31:0] $end
+$var reg 1 T set_int $end
+$var reg 32 U wr_start_addr [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 U
+0T
+b0 S
+b0 R
+b10 Q
+b0 P
+b0 O
+b0 N
+0M
+0L
+0K
+b0 J
+b0 I
+b0 H
+1G
+b0 F
+0E
+0D
+0C
+0B
+0A
+1@
+0?
+b0 >
+0=
+0<
+0;
+b0 :
+b0 9
+08
+07
+06
+b0 5
+14
+03
+b0 2
+01
+00
+0/
+b0 .
+b0 -
+0,
+b0 +
+b0 *
+0)
+0(
+b0 '
+0&
+0%
+b0 $
+b0 #
+1"
+b0 !
+$end
+#5
+1/
+1;
+1,
+16
+04
+0@
+#10
+0/
+0;
+0,
+06
+#15
+17
+1M
+1/
+1;
+1,
+16
+b101 .
+b101 :
+11
+1=
+#20
+0/
+0;
+0,
+06
+#25
+1K
+1%
+1L
+1&
+1M
+07
+1/
+1;
+1,
+16
+10
+1<
+#30
+0/
+0;
+0,
+06
+#35
+0K
+0%
+0L
+0&
+1/
+1;
+1,
+16
+#40
+0/
+0;
+0,
+06
+#45
+1/
+1;
+1,
+16
+#50
+0/
+0;
+0,
+06
+#55
+1/
+1;
+1,
+16
+#60
+0/
+0;
+0,
+06
+#65
+0M
+1/
+1;
+1,
+16
+00
+0<
+01
+0=
+#70
+0/
+0;
+0,
+06
+#75
+1/
+1;
+1,
+16
+#80
+0/
+0;
+0,
+06
+#85
+1/
+1;
+1,
+16
+#90
+0/
+0;
+0,
+06
+#95
+1/
+1;
+1,
+16
+#100
+0/
+0;
+0,
+06
+#105
+1/
+1;
+1,
+16
+#110
+0/
+0;
+0,
+06
+#115
+1/
+1;
+1,
+16
