@@ -205,16 +205,16 @@ module DMA_regfile (clk,
 		else if ((gpread | gpwrite) & pclken)
 			begin
 				pslverr	<=  pslverr_pre;
-//				pready	<=  1'b1;
+//				pready	<=  1'b1;				////
 			end
 		else if (pclken)
 			begin
 				pslverr	<=  1'b0;
-//				pready	<=  1'b0;
+//				pready	<=  1'b0;				////
 			end
 			
 	// XWRIS VLAVH THS GENIKOTHTAS
-	always @(negedge clk or posedge reset)
+/*	always @(posedge clk or posedge reset)
 		if (reset)
 			begin
 				last_tick	<= 1'b0;
@@ -228,4 +228,9 @@ module DMA_regfile (clk,
 			begin
 				pready	<= 1'b0;
 			end
+		*/
+
+	always @(posedge clk)
+		pready <= pclken;
+		
 endmodule

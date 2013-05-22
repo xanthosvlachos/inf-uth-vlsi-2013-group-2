@@ -34,9 +34,9 @@ module testbench;
 			$dumpfile("new_APB_test1.vcd");
 			$dumpvars(0, testbench);
 
-			clk	= 1'b0;
+			clk	= 1'b1;
 			reset	= 1'b1;
-			pclken	= 1'b1;
+			pclken	= 1'b0;
 			psel	= 1'b0;
 			penable	= 1'b0;
 			paddr	= 32'b0;
@@ -55,19 +55,20 @@ module testbench;
 				psel	= 1'b1;
 				paddr	= 32'b0101;
 				pwdata	= 32'b0101011;
-				buffer_count	= 16'b111;
-				int_count	= 16'b0;
+				buffer_count	= 16'b100000;
+				int_count	= 16'b100000;
 
 			/* ACCESS - Second tick of the clock in current transfer */
 			//#30	penable	= 1'b1;
 			
-			
-
 			#10	penable	= 1'b1;
+			
+			#30	pclken	= 1'b1;
 
 			#10	pwdata	= 1'b0;
 				psel	= 1'b0;
 				penable	= 1'b0;
+				pclken	= 1'b0;
 
 			#20	$finish;
 		end
