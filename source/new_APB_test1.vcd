@@ -1,5 +1,5 @@
 $date
-	Fri Apr 12 14:24:25 2013
+	Fri May 17 11:42:33 2013
 $end
 $version
 	Icarus Verilog
@@ -49,39 +49,41 @@ $var wire 1 D wr_reg3 $end
 $var wire 1 E wr_reg4 $end
 $var reg 32 F buffer_size [31:0] $end
 $var reg 1 G cmd_last $end
-$var reg 28 H next_addr [27:0] $end
-$var reg 32 I prdata [31:0] $end
-$var reg 32 J prdata_pre [31:0] $end
-$var reg 1 K pready $end
-$var reg 1 L pslverr $end
-$var reg 1 M pslverr_pre $end
-$var reg 32 N rd_reg0 [31:0] $end
-$var reg 32 O rd_reg1 [31:0] $end
-$var reg 32 P rd_reg2 [31:0] $end
-$var reg 32 Q rd_reg3 [31:0] $end
-$var reg 32 R rd_reg5 [31:0] $end
-$var reg 32 S rd_start_addr [31:0] $end
-$var reg 1 T set_int $end
-$var reg 32 U wr_start_addr [31:0] $end
+$var reg 1 H last_tick $end
+$var reg 28 I next_addr [27:0] $end
+$var reg 32 J prdata [31:0] $end
+$var reg 32 K prdata_pre [31:0] $end
+$var reg 1 L pready $end
+$var reg 1 M pslverr $end
+$var reg 1 N pslverr_pre $end
+$var reg 32 O rd_reg0 [31:0] $end
+$var reg 32 P rd_reg1 [31:0] $end
+$var reg 32 Q rd_reg2 [31:0] $end
+$var reg 32 R rd_reg3 [31:0] $end
+$var reg 32 S rd_reg5 [31:0] $end
+$var reg 32 T rd_start_addr [31:0] $end
+$var reg 1 U set_int $end
+$var reg 32 V wr_start_addr [31:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b0 U
-0T
+b0 V
+0U
+b0 T
 b0 S
-b0 R
-b10 Q
+b10 R
+b0 Q
 b0 P
 b0 O
-b0 N
+0N
 0M
 0L
-0K
+b0 K
 b0 J
 b0 I
-b0 H
+0H
 1G
 b0 F
 0E
@@ -94,7 +96,7 @@ b0 F
 b0 >
 0=
 0<
-0;
+1;
 b0 :
 b0 9
 08
@@ -106,7 +108,7 @@ b0 5
 b0 2
 01
 00
-0/
+1/
 b0 .
 b0 -
 0,
@@ -127,9 +129,9 @@ $end
 16
 #10
 18
-b111 R
-b10 Q
-1M
+b111 S
+b10 R
+1N
 0,
 06
 b111 +
@@ -143,22 +145,29 @@ b101 :
 13
 1?
 #15
+1M
+1&
 1,
 16
 #20
-1M
+1H
+1L
+1%
+1N
 08
 0,
 06
 10
 1<
-1/
-1;
 #25
+0M
+0&
 1,
 16
 #30
-0M
+0L
+0%
+0N
 0,
 06
 00

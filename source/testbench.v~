@@ -61,7 +61,7 @@ module testbench;
 			/* ACCESS - Second tick of the clock in current transfer */
 			//#30	penable	= 1'b1;
 			
-			#10 
+			
 
 			#10	penable	= 1'b1;
 
